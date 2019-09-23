@@ -85,6 +85,69 @@
                 </div>
 
             </div>
+            <div class="rowTab">
+
+                <div class="labels">
+                    <label for="currentPos">What do you like most in FCC: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" class="dropdown" type="dropdown" name="currentPos"
+                        placeholder="Enter your age">
+                        <option disable value>Select an option</option>
+                        <option value="student">Challenges</option>
+                        <option value="job">Projects</option>
+                        <option value="learner">Community</option>
+                        <option value="prefer">Open Source</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="rowTab">
+
+                <div class="labels">
+                    <label for="userRating">Things that should be improved in the future
+                        (Check all that apply):</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="checkbox"><label>Fron-end Projects<input name="checkbox-buttons" value="1"
+                                    type="checkbox" checked class="userRatings"></label></li>
+                        <li class="checkbox"><label>Back-end Projects<input name="checkbox-buttons" value="2"
+                                    type="checkbox" class="userRatings"></label></li>
+                        <li class="checkbox"><label>Data Visualization<input name="checkbox-buttons" value="3"
+                                    type="checkbox" class="userRatings"></label></li>
+                        <li class="checkbox"><label>Challenges<input name="checkbox-buttons" value="4" type="checkbox"
+                                    checked class="userRatings"></label></li>
+                        <li class="checkbox"><label>Open Source Community<input name="checkbox-buttons" value="5"
+                                    type="checkbox" class="userRatings"></label></li>
+                        <li class="checkbox"><label>Gitter help rooms<input name="checkbox-buttons" value="6"
+                                    type="checkbox" class="userRatings"></label></li>
+                        <li class="checkbox"><label>Videos<input name="checkbox-buttons" value="7" type="checkbox"
+                                    class="userRatings"></label></li>
+                        <li class="checkbox"><label>City Meetups<input name="checkbox-buttons" value="8" type="checkbox"
+                                    class="userRatings"></label></li>
+                        <li class="checkbox"><label>Wiki<input name="checkbox-buttons" value="9" type="checkbox"
+                                    class="userRatings"></label></li>
+                        <li class="checkbox"><label>Forum<input name="checkbox-buttons" value="10" type="checkbox"
+                                    class="userRatings"></label></li>
+                        <li class="checkbox"><label>Addition Courses<input name="checkbox-buttons" value="11"
+                                    type="checkbox" class="userRatings"></label></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="rowTab">
+
+                <div class="labels">
+                    <label for="suggestions">Any Comments or Suggestions?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea name="suggestions" id="comment" class="input-field" style="height:50px;resize:vertical;"
+                        placeholder="Enter your text here..."></textarea>
+                </div>
+
+            </div>
+            <button id="submit" type="submit">Submit</button>
 
         </form>
     </div>

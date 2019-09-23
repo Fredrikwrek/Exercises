@@ -38,7 +38,7 @@ body {
     border: 1px solid #c0c0c0;
     border-radius: 2px;
 }
-.userRatings, input[type="checkbox"] {
+.userRatings {
     float: left;
     margin-right: 5px;
 }
@@ -51,10 +51,43 @@ body {
     border: 1px solid #c0c0c0;
     border-radius: 2px;
 }
-/* .radio, .checkbox {
+.radio, .checkbox {
     position: relative;
-    margin: -43px;
+    left: -43px;
     margin-left: 10px;
-    display: block;
     padding-bottom: 10px;
-} */
+  }
+  #submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+  }
+  @media screen and (max-width: 833px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+  }
