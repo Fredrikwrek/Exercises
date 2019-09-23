@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+}
+.content {
+    padding-top: 100px;
+    background-color: rgb(231, 231, 233);
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(207, 207, 207);
+    border-bottom: 10px solid rgba(132, 136, 138, 0.171);
+}
+#header-img {
+    float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.navlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.navlinks {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 200px;
+    display: table;
+}
+#navlink {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#navlink:hover {
+    background-color: rgb(238, 239, 241);
+}
+#form {
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.5em;
+}
+#email {
+    border: 1px solid rgb(132, 136, 138);
+    border-radius: 2px;
+    background-color: rgb(247, 247, 247);
+    height: 20px;
+    width: 200px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+input[type="email"]::placeholder {
+    font-size: 0.8em;
+    font-family: 'Big Shoulders Display', cursive;
+    text-align: center;
+}
+#get-started {
+    border: 1px solid rgba(132, 136, 138, 0.171);
+    border-radius: 2px;
+    background-color: rgb(192, 195, 201);
+    font-family: 'Big Shoulders Display', cursive;
+    height: 30px;
+    width: 100px;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "r1c1 r1c2" 
+    "r2c1 r2c2" 
+    "r3c1 r3c2";
+    padding-top: 90px;
+    height: 400px; 
+  }
+  
+  .r1c2 { grid-area: r1c2; }
+  
+  .r1c1 { grid-area: r1c1; margin-right: 15px;}
+  
+  .r2c2 { grid-area: r2c2; }
+  
+  .r2c1 { grid-area: r2c1; }
+  
+  .r3c1 { grid-area: r3c1; }
+  
+  .r3c2 { grid-area: r3c2; }
+
+  .grid1 div {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #icons {
+    float: right;
+    margin-right: 50px;
+    color: orange;
+  }
+  #video {
+      text-align: center;
+      margin-top: 100px;
+  }
