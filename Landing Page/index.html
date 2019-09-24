@@ -16,95 +16,123 @@
 <body>
     <header id=header>
         <nav id="navbar">
-            <img id="header-img" src="original_trombones.png" alt="Logo" style="width: 20%;">
+            <img id="header-img" src="original_trombones.png" alt="Logo" style="width: 25%;">
+
             <ul class="navlist">
-                <li class="navlinks"><a id="navlink" nav-link href="#grid1">Link1</a></li>
-                <li class="navlinks"><a id="navlink" nav-link href="#video">Link2</a></li>
-                <li class="navlinks"><a id="navlink" nav-link href="#qualityAssurance">Link3</a></li>
+                <li class="navlinks"><a id="navlink" nav-link href="#hr-Price">Pricing</a></li>
+                <li class="navlinks"><a id="navlink" nav-link href="#hr-HowItWorks">How it works</a></li>
+                <li class="navlinks"><a id="navlink" nav-link href="#hr-Features">Features</a></li>
             </ul>
         </nav>
     </header>
     <div class="content">
-
-        <form id="form" action="GET">
-            <div>
-                <h1>Handcrafted, home-made masterpieces</h1>
-            </div>
-            <div>
-                <input id="email" type="email" name="email" placeholder="Enter your Email-address">
-            </div>
-            <button id="get-started" type="submit">Get started</button>
-        </form>
-        <div id="grid1" class="grid1">
-
-            <div class="r1c1">
-                <i id="icons" class="fa fa-3x fa-fire"></i>
-            </div>
-            <div class="r2c1">
-                <i id="icons" class="fa fa-3x fa-truck"></i>
-            </div>
-            <div class="r3c1">
-                <i id="icons" class="fa fa-3x fa-battery-full"></i>
-            </div>
-
-
-            <div class="r1c2">
-                <h1>Premium Materials</h1>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
-                    of
-                    your
-                    purchase.</p>
-            </div>
-            <div class="r2c2">
-                <h1>Fast shipping</h1>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
-                    free
-                    returns if you are not satisfied.</p>
-            </div>
-            <div class="r3c2">
-                <h1>Quality Assurance</h1>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
-                    test
-                    the
-                    pitch of your instrument.</p>
-            </div>
-
+        <section>
+            <form id="form" action="GET">
+                <div>
+                    <h1>Handcrafted, home-made masterpieces</h1>
+                </div>
+                <div>
+                    <span>Enter your Email-address and get your trombone today!</span>
+                </div>
+                <div>
+                    <input id="email" type="email" name="email" placeholder="Enter your Email-address">
+                </div>
+                <button id="get-started" type="submit">Get started</button>
+            </form>
+        </section>
+        <div id="hr-Features">
+            <hr>
         </div>
-        <div id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <div class="flexbox">
-            <div class="trombone">
-                <h1>Trombone</h1>
-                <h1>XXX$</h1>
-                <p>Info 1</p>
-                <p>Info 2</p>
-                <p>Info 3</p>
-                <p>Info 4</p>
-                <button id="select" type="button">Select</button>
-            </div>
-            <div class="trombone">
-                <h1>Trombone</h1>
-                <h1>XXX$</h1>
-                <p>Info 1</p>
-                <p>Info 2</p>
-                <p>Info 3</p>
-                <p>Info 4</p>
-                <button id="select" type="button">Select</button>
-            </div>
-            <div class="trombone">
-                <h1>Trombone</h1>
-                <h1>XXX$</h1>
-                <p>Info 1</p>
-                <p>Info 2</p>
-                <p>Info 3</p>
-                <p>Info 4</p>
-                <button id="select" type="button">Select</button>
-            </div>
-        </div>
+        <section>
+            <div id="grid1" class="grid1">
+                <div class="r1c1">
+                    <i id="icons" class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="r2c1">
+                    <i id="icons" class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="r3c1">
+                    <i id="icons" class="fa fa-3x fa-battery-full"></i>
+                </div>
 
+                <div class="r1c2">
+                    <h1 class="featureheader">Premium Materials</h1>
+                    <p class="featureparagraph">Our trombones use the shiniest brass which is sourced locally. This will
+                        increase the longevity
+                        of
+                        your
+                        purchase.</p>
+                </div>
+                <div class="r2c2">
+                    <h1 class="featureheader">Fast shipping</h1>
+                    <p class="featureparagraph">We make sure you recieve your trombone as soon as we have finished
+                        making
+                        it. We also provide
+                        free
+                        returns if you are not satisfied.</p>
+                </div>
+                <div class="r3c2">
+                    <h1 class="featureheader">Quality Assurance</h1>
+                    <p class="featureparagraph">For every purchase you make, we will ensure there are no damages or
+                        faults
+                        and we will check and
+                        test
+                        the
+                        pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+        <div id="hr-HowItWorks">
+            <hr>
+        </div>
+        <section>
+            <div id="video">
+                <h1>Get your dream tone with Original Tombones</h1>
+                <div>
+                    <iframe id="tromboneVideo" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <div id="hr-Price">
+            <hr>
+        </div>
+        <section>
+            <div class="flexbox">
+                <div class="trombone-gap"></div>
+                <div class="trombone-flexone">
+                    <h1>Trombone</h1>
+                    <h1>XXX$</h1>
+                    <p>Info 1</p>
+                    <p>Info 2</p>
+                    <p>Info 3</p>
+                    <p>Info 4</p>
+                    <button id="select" type="button">Select</button>
+                </div>
+                <div class="trombone-midgap"></div>
+                <div class="trombone-flextwo">
+                    <h1>Trombone</h1>
+                    <h1>XXX$</h1>
+                    <p>Info 1</p>
+                    <p>Info 2</p>
+                    <p>Info 3</p>
+                    <p>Info 4</p>
+                    <button id="select" type="button">Select</button>
+                </div>
+                <div class="trombone-midgap"></div>
+                <div class="trombone-flexthree">
+                    <h1>Trombone</h1>
+                    <h1>XXX$</h1>
+                    <p>Info 1</p>
+                    <p>Info 2</p>
+                    <p>Info 3</p>
+                    <p>Info 4</p>
+                    <button id="select" type="button">Select</button>
+                </div>
+                <div class="trombone-sidgap"></div>
+            </div>
+        </section>
     </div>
 </body>
 
