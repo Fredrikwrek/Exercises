@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.9fr 0.57fr 1.53fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo whiteSpace login";
+  }
+  
+  .logo { grid-area: logo; }
+  
+  .whiteSpace { grid-area: whiteSpace; }
+  
+  .login { grid-area: login; }
+
+  header {
+      background-color: #3b5998;
+      height: 95px;
+  }
+  .logo img {
+    color: white;
+    padding-left: 150px;
+    padding-top: 35px;
+  }
+  .login {
+      margin-top: 27px;
+  }
+  .login div {
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .login div p {
+    margin: 0;
+    color: white;
+    font-size: 0.8em;
+}
+#inputEmail, #inputPassword {
+    height: 1.8em;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+.login .password a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    font-size: 0.8em;
+}
+.login .button {
+    line-height: 55px;
+}
+.login .button button {
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 2.2em;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgba(184, 189, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 2px;
+    outline: none;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contentLeft contentRight";
+    font-family: 'Open Sans', sans-serif;
+    background-color: #3b589811;
+    background-image: linear-gradient(rgb(245, 245, 255), rgb(203, 207, 250));
+  }
+  
+  .contentLeft { grid-area: contentLeft; }
+  
+  .contentRight { grid-area: contentRight; }
+
+  .contentLeft {
+      padding-left: 10vw;
+      width: 40vw;
+      
+  }
+  .contentLeft p {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+#join {
+    font-weight: bold;
+    font-size: 2.5em;   
+    margin-bottom: unset;
+}
+.inputType {
+    display: flexbox;
+    flex: content;
+}
+input[id*="typeInput"] {
+    font-size: 1.1em;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#typeInput-name {
+width: 183px;
+}
+#typeInput-login {
+    width: 370px;
+}
+#birthDate {
+    margin-bottom: unset;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.397);
+}
+#selectBirthDate
+{
+    padding-top: 10px;
+}
+select[id*=select] {
+    padding: 5px;
+}
+#selectMonth, #selectYear{
+    margin-left: -3px;
+}
+#gender {
+    margin-bottom: unset;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.397);
+}
+.inputGender {
+    display: inline-block;
+    margin: 0;
+    width: 100px;
+}
+#genderName {
+    display: inline-block;
+}
+#approvText {
+    width: 370px;
+    font-size: 0.7em;
+    color: #505055;
+}
+#submitButtom {
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+    font-size: 19px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#createASite {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#createASite a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+#createASite a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+}

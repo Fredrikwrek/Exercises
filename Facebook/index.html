@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid-container">
+            <div class="logo">
+                <img src="fb.svg" alt="Logo" style="width: 330px;">
+            </div>
+            <div class="whiteSpace"></div>
+            <div class="login">
+                <div>
+                    <p class="email">Email eller telefonnummer</p>
+                    <input type="email" name="email" id="inputEmail">
+                </div>
+                <div class="password">
+                    <p>Lösenord</p>
+                    <input type="password" name="password" id="inputPassword">
+                    <a href="/">Glömt konto?</a>
+                </div>
+                <div class="button">
+                    <button type="button">Logga in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="contentLeft">
+            <p>Facebook hjälper dig att hålla kontakten med vänner och familj.</p>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/D2gpTO7NG8Y.png" alt="imgContentLeft"
+                style="width: 100%">
+        </div>
+        <div class="contentRight">
+            <form action="GET">
+                <div>
+                    <h1 id="join">Gå med</h1>
+                    <p>Det går snabbt och smidigt.</p>
+                    <div class="inputType">
+                        <div>
+                            <input id="typeInput-name" type="text" name="firstName" id="contentFirstName"
+                                placeholder="Förnamn">
+                            <input id="typeInput-name" type="text" name="surname" id="contentSurname"
+                                placeholder="Efternamn">
+                        </div>
+                        <div>
+                            <input id="typeInput-login" type="email" name="email" id="contentEmail"
+                                placeholder="Mobilnummer eller e-post">
+                        </div>
+                        <div>
+                            <input id="typeInput-login" type="password" name="password" id="contentPassword"
+                                placeholder="Nytt lösenord">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p id="birthDate">Födelsedatum</p>
+                    <div id="selectBirthDate">
+                        <select id="selectDay">
+                            <option>Dag</option>
+                        </select>
+                        <select id="selectMonth">
+                            <option>Månad</option>
+                        </select>
+                        <select id="selectYear">
+                            <option>År</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <p id="gender">Kön</p>
+                    <div class="inputGenderElement">
+                        <div class="inputGender">
+                            <input type="radio">
+                            <p id="genderName">Man</p>
+                        </div>
+                        <div class="inputGender">
+                            <input type="radio">
+                            <p id="genderName">Kvinna</p>
+                        </div>
+                        <div class="inputGender">
+                            <input type="radio">
+                            <p id="genderName">Anpassat</p>
+                        </div>
+                    </div>
+                    <p id="approvText">
+                        Genom att klicka på Gå med godkänner du våra användarvillkor. Läs mer om hur vi samlar in,
+                        använder och delar dina data i vår datapolicy och hur vi använder cookies och liknande
+                        teknologi i vår cookiespolicy. Du kan komma att få sms-aviseringar från oss och du kan välja
+                        bort detta när som helst.
+                    </p>
+                </div>
+                <button id="submitButtom" type="submit">Gå med</button>
+            </form>
+            <div id="createASite">
+                <span><a href="/">Skapa en sida</a> för en kändis, ett band eller företag.</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
