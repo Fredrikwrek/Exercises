@@ -6,24 +6,26 @@ html, body {
     padding: 0;
 }
 .content {
-    padding-top: 100px;
     background-color: rgb(231, 231, 233);
     max-height: 100vh;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 100px; 
     overflow-y: scroll; 
+    padding-top: 70px;
 }
 .content section {
     scroll-snap-align: center;
+    height: 100vh;
+    min-height: 600px;
+    display: table;
+    width: 100%;
 }
 section:nth-of-type(2n) {
     background-color: rgb(255, 255, 253);
-    padding-top: 180px;
-    padding-bottom: 180px;
 }
-section:nth-of-type(odd) {
-    margin-top: 100px;
-    margin-bottom: 100px;
+#sectionPosition {
+    display: table-cell;
+    vertical-align: middle;
 }
 hr {
     border: 0;
@@ -83,7 +85,7 @@ hr {
     font-family: 'Big Shoulders Display', cursive;
 }
 #form div h1 {
-    padding-bottom: 20px;
+    margin: 0;
     font-size: 4em;
 }
 #form div span {
@@ -159,13 +161,13 @@ input[type="email"] {
   }
   #video {
       text-align: center;
-      padding-bottom: 70px;
+      /* padding-bottom: 70px; */
   }
   #video h1 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 3em;
+    margin: 0;
     padding-bottom: 20px;
-    padding-top: 50px;
   }
   #tromboneVideo {
       border: 1px solid rgb(65, 65, 65);
@@ -179,12 +181,61 @@ input[type="email"] {
   div[class*="trombone-"] {
     flex: auto;
 }
-div[class*="trombone-flex"] {
+.trombone-flex {
+    font-family: 'Big Shoulders Display', cursive;
     text-align: center;
-    border: 2px solid black;
+    border: 0.5px solid rgba(0, 0, 0, 0.329);
     border-radius: 2px;
-    max-width: 200px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.20);
+    max-width: 300px;
+    padding-bottom: 20px;
 }
 .trombone-midgap {
  max-width: 150px;
+}
+#priceHead {
+    text-transform: uppercase;
+    background-color: rgb(245, 238, 220);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.329);
+    box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.20);
+}
+#priceHead h1 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#priceTag {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 31px;
+    padding-right: 40px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(251, 255, 8);
+    border: 1px solid rgba(206, 131, 46, 0.253);
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.20);
+}
+#priceTag h1 {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    text-align: center;
+    color: red;
+
+}
+#select {
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgb(231, 212, 41);
+    border: 1px solid rgba(206, 131, 46, 0.253);;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.20);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
