@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+header {
+    height: 100vh;
+    background-color: black;
+    scroll-snap-align: start;
+}
+header [id*="head-bg-img"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: backgroundImg 50s infinite;
+    animation-timing-function: linear;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.76);
+}
+#head-bg-img-4 {animation-delay: 37.5s}
+#head-bg-img-3 {animation-delay: 25s}
+#head-bg-img-2 {animation-delay: 12.5s}
+#head-bg-img-1 {animation-delay: 0s}
+@keyframes backgroundImg {
+0% {
+    opacity: 1;
+}
+17.5% {
+    opacity: 1;
+}
+25% {
+    opacity: 0;
+}
+92.5% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+h1 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 80%;
+    transform: translate(-50%, -50%); 
+    left: 50%;
+    top: 40vh;
+    z-index: 2;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: calc(2em + 2vW); 
+    color: #e7e7e74d;
+    text-shadow: 0 0 10px #f1f1f1, 0 0 15px #f1f1f1, 0 0 20px #fdf4c9, 0 0 25px #d4d4d4, 0 0 30px #fdf4c9, 0 0 35px #fdf4c9, 0 0 0px #fdf4c9;
+}
+#headNav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 70vh;
+    z-index: 2;
+}
+.headLinks {
+    height: 8vh;
+    display: table;
+    text-align: center;
+    border-left: 2px solid #e7e7e7a6;
+}
+.headLinks:first-child {
+    border-left: unset;
+}
+.headLinks a {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 1em; 
+    color: #e7e7e74d;
+    text-shadow: 0 0 10px #f1f1f1, 0 0 15px #f1f1f1, 0 0 20px #fdf4c9, 0 0 25px #d4d4d4, 0 0 30px #fdf4c9, 0 0 35px #fdf4c9, 0 0 0px #fdf4c9;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20vw;
+    transition: 1s;
+}
+.headLinks a:hover {
+    font-size: 1.7em; 
+    width: 22vw;
+}
+#stickyNavIcon i {
+    color: rgba(255, 255, 255, 0.192);
+}
+#stickyNav {
+    position: sticky;
+    top: 0%;
+    z-index: 4;
+}
+#navbar {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50vh;
+    width: 80px;
+    height: 400px;
+    margin-left: 50px;
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 0.5px solid rgba(255, 255, 255, 0.445);
+    -webkit-box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.2);
+    box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+div[id*="navLink"] {
+    width: 100%;
+    height: 20%;
+    display: table;
+}
+div[id*="navLink"] a {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(124, 124, 124, 0.459);
+}
+div[id*="navLink"] a:hover {
+    background-color: rgba(255, 244, 209, 0.068);
+    border: 0.5px solid rgba(255, 255, 255, 0.445);
+    border-radius: 6px;
+}
+div[id*="navLink"] a p {
+    font-size: 7px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 2.5px;
+}
+#dreamtown-spotify { 
+    position: fixed;
+    top: 85vh;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0.8;
+    border: 2px solid rgba(0, 0, 0, 0.438);
+    border-radius: 100%;
+    -webkit-box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.2);
+    box-shadow: -1px 0px 28px 8px rgba(0,0,0,0.2);
+}
+section {
+    height: 100vh;
+    overflow: hidden;
+    scroll-snap-align: start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.76);
+}
+section h2 {
+    margin: 0;
+}
+#section-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+    background-color: #fffef8;
+}
+#section-1 > div {
+    font-size: calc(0.7vh + 0.7vw);
+    width: 30%;
+}
+#img-fredrik {
+    text-align: center;
+}
+#img-fredrik img {
+    border: 5px solid rgba(255, 255, 255, 0.479);
+    border-radius: 2px;
+    -webkit-box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.58);
+    box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.58);
+    width: auto;
+    height: 80vh;
+}
+#section-2 #bg-img2-1 {
+    background-image: url('webdesign.jpg'); 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter:blur(4px);
+    transform: scale(1.1);
+    background-position: bottom;
+}
+#section-2 #bg-img2-2 {
+    background-image: url('js4.jpg'); 
+    height: 100vh; 
+    width: 100vh;
+    mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, white 0%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, white 0%, transparent 100%);
+    position: absolute;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-50%, 0%);
+    top: 200vh;
+    left: 30%;
+    z-index: 2;
+}
+#section-2 .element  {
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contentTitle contentTitle" "contentText contentImages";
+    padding: 3%;
+    min-width: 55vw;
+    max-height: 70vh;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-size: 2.5vmin;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 217.4vh;
+    left: 65.2%;
+    z-index: 3;
+}
+.contentTitle { 
+    grid-area: contentTitle;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+.contentTitle h2 {
+    margin: 0;
+    line-height: 2em;
+    font-size: calc(1em + 1vw);
+}
+
+.contentText { 
+    padding-left: 10%;
+    grid-area: contentText; 
+}
+.contentText > p { 
+    font-size: calc(0.75em + 0.75vw); 
+}
+.contentText p ul { 
+    font-size: calc(0.5em + 0.5vw); 
+}
+#contentImages {
+    grid-area: contentImages;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contentImages > div {
+    position: relative;
+    width: 30%;
+}
+div [id*="brandIcon"]{
+    animation: brandImg 6s infinite;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    top: 25%;
+    left: 10%;
+}
+#brandIcon-htmlCss {
+        animation-delay: 0s;
+}
+#brandIcon-js {
+        animation-delay: -2s;
+}
+#brandIcon-react {
+        animation-delay: -3.5s;
+}
+#brandIcon-angular {
+        animation-delay: -1s;
+}
+#brandIcon-nodeJs {
+        animation-delay: -5s;
+}
+@keyframes brandImg {
+0% {
+    opacity: 0;
+    transform: rotateY(-0deg)
+}
+10% {
+    opacity: 0;
+}
+48% {
+    opacity: 1;
+}
+52% {
+    opacity: 1;
+}
+90% {
+    opacity: 0;
+}
+100% {
+    opacity: 0;
+    transform: rotateY(-180deg)
+}
+}
+#section-3 {
+ background-color: rgb(253, 249, 241); 
+ text-align: center;
+}
+#section-3 .sectionTitle {
+    font-size: calc(2.5vh + 2.5vw);
+    height: 50vh;
+    line-height: 40vh;
+    padding-top: 10vh;
+    text-shadow: 4px 4px 4px #00000038;
+}
+#section-3 div:last-child {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+}
+#section-3 div:last-child .sectionContent p {
+    margin-top: 0;
+    font-size: calc(1vh + 1vw);
+    text-shadow: 1px 1px 0px #00000017;
+}
+#section-3 div:last-child [class*="sectionWhiteSpace"] {
+    width: 20%;
+    height: 50vh;
+}
+#section-4 {
+    display: grid;
+    grid-template-columns: 0.4fr 2.2fr 0.4fr;
+    grid-template-rows: 1.9fr 0.3fr;
+    grid-template-areas: "sectionWhiteSpace-left sectionContent   sectionWhiteSpace-right" "sectionFooter sectionFooter  sectionFooter";
+    background-image: url("bandet.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Muli', sans-serif;
+    color: #f5eeee;
+}
+#section-4 .sectionContent { 
+    grid-area: sectionContent;
+    background: rgba(0, 0, 0, 0.39);
+    border-left: 5px solid black;
+    border-right: 5px solid rgba(0, 0, 0, 0.562);
+    -webkit-box-shadow: 0px 0px 41px 22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 41px 22px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 41px 22px rgba(0,0,0,0.75);
+}
+#section-4 .sectionContent .sectionTitle { 
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    font-weight: 50;
+    font-size: calc(2vh + 2vW); 
+    line-height: 3em;
+    font-family: 'Dancing Script', cursive;
+    background-color: #000000ab;
+    }
+#section-4 .sectionContent .sectionText { 
+    height: 56vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+#section-4 .sectionContent .sectionText div h3 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: calc(1vh + 1vW);
+    padding-top: 3vh;
+}
+#section-4 .sectionContent .sectionText div p { 
+    font-size: calc(0.7vh + 0.7vw);
+}
+#section-4 .sectionContent .sectionText div div { 
+    display: flex;
+    justify-content: center;
+}
+#section-4 .sectionContent .sectionText div div p { 
+    text-align: center;
+    width: 30%;
+}
+#section-4 .sectionFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    grid-area: sectionFooter;
+    width: 100%; 
+    background-color: rgb(118, 158, 138);
+    border-top: 2px solid rgb(30, 30, 39);
+    text-align: center;
+    -webkit-box-shadow: 0px 6px 22px 15px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 6px 22px 15px rgba(0,0,0,0.49);
+    box-shadow: 0px 6px 22px 15px rgba(0,0,0,0.49);
+}
+#section-4 .sectionFooter div {
+    width: 30%;
+    display: inline-block;
+}
+.sectionWhiteSpace-left { grid-area: sectionWhiteSpace-left; }
+.sectionWhiteSpace-right { grid-area: sectionWhiteSpace-right; }
+@media screen and (max-width: 1480px) {
+    #img-fredrik img {
+        width: auto;
+        height: 65vh;
+    }
+    #section-3 .sectionTitle, #section-3 div:last-child .sectionContent {
+        margin-left: 10vh; 
+    }
+}
+@media screen and (max-width: 1180px) {
+    #img-fredrik img {
+        width: auto;
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 1090px) {
+    #img-fredrik img {
+        width: auto;
+        height: 50vh;
+    }
+    #section-3 .sectionTitle {
+        font-size: 3em;  
+    }
+}
+@media screen and (max-width: 980px) {
+    #navbar {
+        margin-left: 20px;
+    }
+    #img-fredrik, #section-1 .sectionText {
+        margin-top: 10vh;
+    }
+    #img-fredrik img {
+        width: auto;
+        height: 40vh;
+    }
+    #section-3 .sectionTitle {
+        margin-left: 10vh; 
+        font-size: 2.5em; 
+    }
+    #section-2 .element  {
+        left: 55%;
+        min-width: 70vw;
+    }
+}
+@media screen and (max-width: 767px) {
+    #img-fredrik, #section-1 .sectionText {
+        margin-top: 15vh;
+    }
+    #img-fredrik img {
+        width: auto;
+        height: 35vh;
+    }
+    #section-2 #bg-img2-2 {
+        background-image: none; 
+        height: 0; 
+        width: 0;
+        mask-image: unset;
+        -webkit-mask-image: unset;
+        position: unset;
+        background-position: unset;
+        background-repeat: unset;
+        background-size: unset;
+        transform: unset;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    #section-3 .sectionTitle {
+        font-size: 2em;  
+    }
+}
+@media screen and (max-width: 567px) {
+    .headLinks {
+        height: 4vh;
+    }
+    .headLinks a {
+        font-size: 0.8em; 
+    }
+    #navbar {
+        display: none;
+    }
+    #dreamtown-spotify { 
+        display: none;
+    }
+    #section-1 {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #section-1 > div {
+        font-size: 0.8em;
+        width: 100%;
+    }
+    #img-fredrik, #section-1 .sectionText {
+        margin-top: 2vh;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #img-fredrik img {
+        width: 80%;
+        height: auto;
+    }
+    #section-1 .sectionText .sectionContent p {
+        font-size: 0.8em;
+    }
+    #section-2 .element  {
+        left: 50%;
+        height: 55vh;
+        min-width: 90vw;
+        font-size: 0.8em;
+    }
+    #section-2 .element .contentTitle  {
+        padding-top: 5vh;
+    }
+    #section-3 .sectionTitle {
+        font-size: 1.3em;
+        height: 30vh;
+        line-height: 30vh;
+        padding-top: 10vh;
+        margin-left: 0vh; 
+    }
+    #section-3 div:last-child .sectionContent {
+        margin-top: 7vh;
+        margin-left: 0vh;
+    }
+    #section-3 div:last-child .sectionContent p {
+        font-size: 0.8em;
+    }
+    #section-4 {
+        display: grid;
+        grid-template-columns: 0.05fr 2.9fr 0.05fr;
+        grid-template-rows: 1.9fr 0.3fr;
+        grid-template-areas: "sectionWhiteSpace-left sectionContent   sectionWhiteSpace-right" "sectionFooter sectionFooter  sectionFooter";
+        background-image: url("bandet.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Muli', sans-serif;
+        color: #f5eeee;
+    }
+    #section-4 .sectionContent .sectionTitle { 
+        padding-left: 3%;
+        padding-right: 3%;
+        }
+    #section-4 .sectionContent .sectionText div h3 {
+        font-size: 0.9em;
+    }
+    #section-4 .sectionContent .sectionText div p { 
+        font-size: 0.7em;
+    }
+    #section-4 .sectionContent .sectionText div div { 
+        display: block;
+        width: 100%;
+    }
+    #section-4 .sectionContent .sectionText div:last-child p { 
+        width: 100%;
+        font-size: 0.7em;
+    }
+}
