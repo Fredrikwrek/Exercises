@@ -2,11 +2,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-* {
+/* * {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
-  }
+  } */
 html, body {
     margin: 0;
     padding: 0;
@@ -173,7 +173,7 @@ section h2 {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10vh;
-    background-color: #fffef8;
+    background-color: #868477;
 }
 #section-1 > div {
     font-size: calc(0.7vh + 0.7vw);
@@ -485,7 +485,7 @@ div [id*="brandIcon"]{
         font-size: 2em;  
     }
 }
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 567px), (max-aspect-ratio: 768/1024) {
     .headLinks {
         height: 4vh;
     }
@@ -527,7 +527,8 @@ div [id*="brandIcon"]{
         font-size: 0.8em;
     }
     #section-2 .element .contentTitle  {
-        padding-top: 5vh;
+        padding-top: 6vh;
+        font-size: 1.5em;
     }
     #section-3 .sectionTitle {
         font-size: 1.3em;
@@ -572,5 +573,20 @@ div [id*="brandIcon"]{
     #section-4 .sectionContent .sectionText div:last-child p { 
         width: 100%;
         font-size: 0.7em;
+    }
+}
+@media (max-aspect-ratio: 768/1024) {
+    body {
+        font-size: 150%;
+    }
+}
+@media (max-aspect-ratio: 320/568) {
+    body {
+        font-size: 90%;
+    }
+}
+@media screen and (max-height: 450px) {
+    #navbar {
+        display: none;
     }
 }
