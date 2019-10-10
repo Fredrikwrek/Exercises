@@ -2,7 +2,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-/* * {
+*/*  {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
@@ -589,4 +589,41 @@ div [id*="brandIcon"]{
     #navbar {
         display: none;
     }
+}
+@media (min-aspect-ratio: 1536/595) {
+    div [id*="brandIcon"]{
+    height: 10vh !important; 
+    width: auto !important;
+    }
+}
+@media (min-aspect-ratio: 1536/485) {
+    .contentTitle h2 {
+        margin: 0;
+        line-height: 1.7em;
+        font-size: 1.7em;
+    }
+    .contentText > p { 
+        font-size: 1.2em; 
+    }
+    .contentText p ul { 
+        font-size: 0.7em; 
+    }
+    div [id*="brandIcon"]{
+    height: 8vh !important; 
+    width: auto !important;
+    }
+    #section-4 .sectionContent .sectionTitle { 
+        font-size: 2em; 
+        }
+    #section-4 .sectionContent .sectionText div h3 { 
+        margin-top: 0; 
+        padding-top: 2vh; 
+        font-size: 0.9em;
+        }
+    #section-4 .sectionContent .sectionText div p { 
+        font-size: 0.7em;
+        }
+    #section-4 .sectionContent .sectionText div div p { 
+        margin-top: 0;
+        }
 }
