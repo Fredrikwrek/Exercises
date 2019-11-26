@@ -1,0 +1,99 @@
+* {box-sizing: border-box;}
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+#dice {
+    position: absolute;
+    top: 200px;
+    display: block;
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+@keyframes spin {
+    0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    100% { transform: translateZ(-100px) rotateX(90deg) rotateY(90deg) rotateZ(90deg); }
+}
+/* @keyframes spin {
+    0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    16% { transform: translateZ(-100px) rotateX(180deg) rotateY(180deg) rotateZ(0deg); }
+    33% { transform: translateZ(-100px) rotateX(360deg) rotateY(90deg) rotateZ(180deg); }
+    50% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    66% { transform: translateZ(-100px) rotateX(180deg) rotateY(360deg) rotateZ(270deg); }
+    83% { transform: translateZ(-100px) rotateX(270deg) rotateY(180deg) rotateZ(180deg); }
+    100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+} */
+.sideOne{
+    transform: translateZ(100px)
+}
+.sideTwo {
+    transform: rotateY(90deg) translateZ(100px);
+}
+.sideThree {
+    transform: rotateX(90deg) translateZ(100px);
+}
+.sideFour {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+.sideFive {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.sideSix {
+    transform: rotateX(-180deg) translateZ(100px);
+}
+div[class^="side"] {
+    display: inline-block;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    border: 1px solid black;
+    margin: 0;
+}
+div[class^="dot"] {
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+.dotTopLeft {
+    margin-top:20px;
+    margin-left: 20px;
+} 
+.dotTopRight {
+    margin-top:20px;
+    margin-left: 130px;
+}
+.dotCenter {
+    margin-top:75px;
+    margin-left: 75px;
+} 
+.dotCenter {
+    margin-top:75px;
+    margin-left: 75px;
+} 
+.dotCenterLeft {
+    margin-top:75px;
+    margin-left: 20px;
+}
+.dotCenterRight {
+    margin-top:75px;
+    margin-left: 130px;
+}  
+.dotBottomLeft {
+    margin-top:130px;
+    margin-left: 20px;
+}
+.dotBottomRight {
+    margin-top:130px;
+    margin-left:130px;
+}
+#roll {
+    position: absolute;
+    top: 600px;
+    
+}
