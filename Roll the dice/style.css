@@ -16,6 +16,10 @@
     0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
     100% { transform: translateZ(-100px) rotateX(90deg) rotateY(90deg) rotateZ(90deg); }
 }
+/* @keyframes mainPosition {
+    0% { transform: translateZ(-100px) rotateX(90deg) rotateY(90deg) rotateZ(90deg); }
+    100% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+} */
 /* @keyframes spin {
     0% { transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
     16% { transform: translateZ(-100px) rotateX(180deg) rotateY(180deg) rotateZ(0deg); }
